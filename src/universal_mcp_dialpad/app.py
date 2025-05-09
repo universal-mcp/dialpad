@@ -3140,7 +3140,7 @@ class DialpadApp(APIApplication):
             dict[str, Any]: A successful response
 
         Tags:
-            rooms
+            rooms, important
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -4751,7 +4751,7 @@ class DialpadApp(APIApplication):
             dict[str, Any]: A successful response
 
         Tags:
-            users
+            users, important
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -4879,7 +4879,7 @@ class DialpadApp(APIApplication):
             dict[str, Any]: A successful response
 
         Tags:
-            users
+            users, important
         """
         request_body = {
             'auto_assign': auto_assign,
